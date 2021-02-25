@@ -1,12 +1,16 @@
 // Copyright 2021 NNTU-CS
-
+#include <iostream>
 int gcd(int a, int b) {
 {
-   If (a<b) { t =a; a=b; b=t; }
-   while(b!=0) {
-     t = b;
-     b = a%b;
-     a = t;
-  }
-   return a;
+    while(a > 0 && b > 0)
+ 
+        if(a > b)
+            a %= b;
+ 
+        else
+            b %= a;
+ 
+    return a + b;
+}
+   std:: cout << gcd(10,5) << endl;
 }

@@ -1,16 +1,18 @@
 // Copyright 2021 NNTU-CS
 #include <iostream>
-int gcd(int a, int b) {
+
+using namespace std;
+int main()
 {
-    while(a > 0 && b > 0)
- 
-        if(a > b)
-            a %= b;
- 
-        else
-            b %= a;
- 
-    return a + b;
-}
-   std:: cout << gcd(10,5) << endl;
+    int a,b,c;
+    cin>>a>>b;
+    while (b) {
+      c = a % b;
+      a = b;
+      b = c;
+    }
+    cout<<a << endl;
+    
+
+    return 0;
 }

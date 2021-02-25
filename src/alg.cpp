@@ -4,12 +4,13 @@ using namespace std;
     void gcd (int a, int b)
     {
     while(a > 0 && b > 0)
- 
+    {
         if(a > b)
             a %= b;
  
         else
             b %= a;
+    }
     cout << a+b << endl;
     }
 int main()
@@ -19,6 +20,5 @@ int main()
     gcd(a,b);
     return 0;
 }
-
 }
 

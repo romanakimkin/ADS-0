@@ -1,5 +1,5 @@
 // Copyright 2021 NNTU-CS
-#include <iostream>
+ #include <iostream>
 using namespace std;
     void gcd (int a, int b)
     {
@@ -18,5 +18,7 @@ int main()
     cin>>a>>b;
     gcd(a,b);
     return 0;
+}
+
 }
 

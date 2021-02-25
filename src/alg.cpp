@@ -1,7 +1,5 @@
 // Copyright 2021 NNTU-CS
-
-int gcd(int a, int b) {
-    #include <iostream>
+ #include <iostream>
 using namespace std;
     void gcd (int a, int b)
     {
